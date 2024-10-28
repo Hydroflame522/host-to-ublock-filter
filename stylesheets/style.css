@@ -1,0 +1,36 @@
+body {
+  font-family: MS-BAHNSCHRIFT, sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+textarea {
+  font-family: MS-BAHNSCHRIFT;
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+button {
+  font-family: MS-BAHNSCHRIFT;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: none;
+  color: black;
+  border: 2px solid #04AA6D;
+  border-radius: 4px;
+}
+
+button:hover {
+  color: white;
+  background-color: #04AA6D;
+}
+
+@font-face {
+  font-family: MS-BAHNSCHRIFT;
+  src: url(../assets/fonts/BAHNSCHRIFT.TTF);
+}

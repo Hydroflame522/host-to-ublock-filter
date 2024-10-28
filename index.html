@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <title>Host Filter to uBlock Filter Converter</title>
+</head>
+
+<body>
+
+  <h1>Host filter to uBlock Filter</h1>
+  <p>Paste host filters (e.g., <code>0.0.0.0 subdomain.domain.com</code>) and convert them into uBlock Origin filters
+    (e.g., <code>||subdomain.domain.com^</code>)</br>
+    This was made for me to block spotify webplayer ads (you can try the list I converted: <a href="https://raw.githubusercontent.com/x0uid/SpotifyAdBlock/master/hosts">github raw text</a>)
+  </p>
+
+  <textarea id="inputArea" placeholder="Paste your host filters here"></textarea>
+  <center><button onclick="convertFilters()">Convert List</button></center>
+  <textarea id="outputArea" placeholder="uBlock filters will appear here" readonly></textarea>
+  <script src="scripts/converter.js"></script>
+
+</body>
+
+</html>
